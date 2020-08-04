@@ -1,0 +1,12 @@
+extends layout
+
+block content
+        h1 #{title}
+        form(method='POST', action='/user/edit/'+todo._id)
+           #form-group
+                label Name:
+                input.form-control(name='Name', type='text', value=todo.Name)
+           #form-group
+                label Descrition:
+                input.form-control(name='Description', type='text', value=todo.Description)
+           input.btn.btn-primary(type='submit', value='UPDATE')    

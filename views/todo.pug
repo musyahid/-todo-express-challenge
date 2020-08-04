@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= todo.Name
+    h5= todo.Description
+    hr
+    a(href='/todo/edit/'+ todo._id) EDIT
+     a(href='#' todo._id) DELETE

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 #{title}
+    ul
+    each to_do, i in todo
+        li.list-group-item
+          a(href="/todo/"+to_do._id)=to_do.Name
+        
+           
